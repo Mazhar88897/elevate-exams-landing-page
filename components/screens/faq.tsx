@@ -7,7 +7,7 @@ import { HoverCard } from "@/components/pages/hoverCardstill"
 export default function Faq() {
   // State to track which accordions are open
   const [openAccordions, setOpenAccordions] = useState<number[]>([0]) // First one open by default
-
+  const [openAccordionsright, setOpenAccordionsright] = useState<number[]>([0]) 
   // Topics data with descriptions
   const topics = [
     {
@@ -40,6 +40,9 @@ export default function Faq() {
   // Toggle accordion open/close
   const toggleAccordion = (index: number) => {
     setOpenAccordions((prev) => (prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]))
+  }
+  const toggleAccordionright = (index: number) => {
+    setOpenAccordionsright((prev) => (prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]))
   }
 
   return (
@@ -82,27 +85,29 @@ export default function Faq() {
     <div className="flex-1 min-w-[300px] space-y-4">
       <h2 className="text-3xl font-semibold text-slate-700 mb-8">We Also Provide Online Programming Videos</h2>
 
-      <div className="space-y-6">
+      <div className="space-y-1">
         {/* Accordion Topics */}
         {topics.map((topic, index) => (
           <div key={index}>
+            <HoverCard isActive={index === 0 ? true : false}>
             <div
-              className="flex items-center justify-between pb-3 border-b border-black cursor-pointer"
-              onClick={() => toggleAccordion(index)}
+              className="flex items-center justify-between p-3 border border-gray-800 cursor-pointer"
+              onClick={() => toggleAccordionright(index)}
             >
               <h3 className="text-sm font-semibold text-gray-800">{topic.title}</h3>
-              {openAccordions.includes(index) ? (
+              {openAccordionsright.includes(index) ? (
                 <ArrowDownRight className="h-5 w-5 text-blue-600 transition-transform duration-200 scale-x-[-1]" />
               ) : (
                 <ArrowUpRight className="h-5 w-5 text-gray-600 transition-transform duration-200" />
               )}
             </div>
+            </HoverCard>
             <div
-              className={`my-2 text-gray-500 overflow-hidden transition-all duration-300 ${
-                openAccordions.includes(index) ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+              className={`my-3 text-gray-500 overflow-hidden transition-all duration-300 ${
+                openAccordionsright.includes(index) ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <p className="text-xs py-2">{topic.description}</p>
+              <p className="text-xs py-3 pl-5">{topic.description}</p>
             </div>
           </div>
         ))}

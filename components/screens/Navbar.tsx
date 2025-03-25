@@ -17,22 +17,22 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { title: "Home", href: "/" },
-  { title: "About", href: "/about" },
+  { title: "About", href: "/main/about" },
   {
     title: "Courses",
     hasDropdown: true,
     submenu: [
-      { title: "Courses", href: "/courses" },
-      { title: "Course Details", href: "/courses/details" },
+      { title: "Courses", href: "/main/courses" },
+      { title: "Course Details", href: "/main/courses/details" },
     ],
   },
   {
     title: "Pages",
     hasDropdown: true,
     submenu: [
-      { title: "About Us", href: "/pages/about" },
-      { title: "Contact Us", href: "/pages/contact" },
-      { title: "FAQ", href: "/pages/faq" },
+      { title: "About Us", href: "/main/about" },
+      { title: "Contact Us", href: "/main/contact" },
+      { title: "FAQ", href: "/main/faq" },
     ],
   },
   {
@@ -43,7 +43,7 @@ const navItems: NavItem[] = [
       { title: "Blog Single", href: "/blog/single" },
     ],
   },
-  { title: "Contact", href: "/contact" },
+  { title: "Contact", href: "/main/contact" },
 ]
 
 export default function Navbar() {

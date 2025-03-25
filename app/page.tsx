@@ -10,6 +10,7 @@ import { HoverCard } from "@/components/pages/HoverCard"
 import Accords from "@/components/screens/Accords"
 import Qouatation from "@/components/screens/Qouatation"
 import Blogs from "@/components/screens/Blogs"
+import Owner from "@/components/screens/owner"
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <CourseShowcase />
       <Accords />
       <Qouatation />
+      <Owner />
       <Blogs />
       <Footer />
 
