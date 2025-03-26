@@ -39,8 +39,8 @@ const navItems: NavItem[] = [
     title: "Blog",
     hasDropdown: true,
     submenu: [
-      { title: "Blog Grid", href: "/blog/grid" },
-      { title: "Blog Single", href: "/blog/single" },
+      { title: "Blog Grid", href: "/main/blogs" },
+      { title: "Blog Single", href: "/main/blogs/single-blog" },
     ],
   },
   { title: "Contact", href: "/main/contact" },
