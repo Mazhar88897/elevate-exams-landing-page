@@ -11,7 +11,8 @@ import Accords from "@/components/screens/Accords"
 import Qouatation from "@/components/screens/Qouatation"
 import Blogs from "@/components/screens/Blogs"
 import Owner from "@/components/screens/owner"
-
+import Courses from "@/components/screens/courses"
+import CoursesHeading from "@/components/screens/coursesHeading"
 export default function Home() {
   return (
     <main className="">
@@ -20,6 +21,11 @@ export default function Home() {
       <div className="h-[60vh] w-full flex justify-center items-center">
             <h1 className="text-5xl font-black">Animation</h1>
       </div>
+
+
+
+      <CoursesHeading />
+      <Courses />
       <CourseShowcase />
       <Accords />
       <Qouatation />

@@ -3,7 +3,7 @@
 import { useState, useRef } from "react"
 import Link from "next/link"
 import { Search, X, ChevronDown } from "lucide-react"
-
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Input } from "@/components/ui/input"
@@ -230,13 +230,7 @@ export default function Navbar() {
 function Logo() {
   return (
     <div className="flex items-center">
-      <div className="mr-2 h-10 w-10 relative">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 5L33.6603 28.75H6.33975L20 5Z" fill="#1a2352" />
-          <path d="M20 15L26.3301 26.25H13.6699L20 15Z" fill="#FFD700" transform="rotate(180 20 20.625)" />
-        </svg>
-      </div>
-      <span className="text-xl font-bold text-[#1a2352]">Encode</span>
+     <Image src="/logo.svg" alt="Logo" width={150} height={100} />
     </div>
   )
 }

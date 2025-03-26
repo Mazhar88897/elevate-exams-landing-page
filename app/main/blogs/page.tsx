@@ -40,11 +40,11 @@ export default function LatestArticles() {
     <div className="container mx-auto px-4 py-16 max-w-7xl">
       <div className="mb-12 text-center">
         <h2 className="text-4xl font-bold text-[#111827] inline-block relative">
-          Latest <Highlight>Articles Grid</Highlight> 
           
+          Latest <Highlight>Articles Grid</Highlight> 
+        
         </h2>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {articles.map((article) => (
           <HoverCard key={article.id} > 
