@@ -12,13 +12,13 @@ import { CustomButton } from "@/components/pages/CustomButton"
 function Logo() {
   return (
     <Link href="/" className="flex items-center space-x-2">
-      <div className="text-yellow-400">
+      {/* <div className="text-yellow-400">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 0L40 20L20 40L0 20L20 0Z" fill="currentColor" fillOpacity="0.2" />
           <path d="M20 5L35 20L20 35L5 20L20 5Z" fill="currentColor" />
         </svg>
-      </div>
-      <span className="text-white text-2xl font-bold">Encode</span>
+      </div> */}
+      <span className="text-white text-2xl font-bold">Elevate Exams</span>
     </Link>
   )
 }

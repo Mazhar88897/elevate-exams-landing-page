@@ -21,7 +21,7 @@ export default function Home() {
     <main className="">
       <Navbar />
       <Hero />
-      <div className="-translate-y-[150px]  w-full flex justify-center items-center">
+      <div className=" hidden lg:block  lg:-translate-y-[150px]   w-full  justify-center items-center">
       
       <DotLottieReact
       src="/animation.lottie"
@@ -29,6 +29,11 @@ export default function Home() {
       loop
       autoplay
     />
+                            
+      </div>
+      <div className=" flex lg:hidden h-[50vh]  lg:-translate-y-[150px]   w-full  justify-center items-center">
+      
+      <h1 className="text-4xl">Animation</h1>
                             
       </div>
 

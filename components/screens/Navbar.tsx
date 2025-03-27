@@ -7,6 +7,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Input } from "@/components/ui/input"
+import { HoverCard } from "../pages/hoverCardHard"
 
 interface NavItem {
   title: string
@@ -168,15 +169,19 @@ export default function Navbar() {
                 </svg>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-[300px] p-0">
+            <SheetContent side="left" className="w-[300px] p-0 [&>button]:hidden">
               <div className="flex h-20 items-center border-b px-6">
                 <Link href="/" className="flex items-center">
                   <Logo />
                 </Link>
-                {/* <Button variant="ghost" size="icon" className="ml-auto" onClick={() => setIsOpen(false)}>
-                  <X className="h-5 w-5" />
+                {/* isko comment */}
+                <Button variant="ghost" size="icon" className="ml-auto items-center mt-[-5px] mr-[-10px]" onClick={() => setIsOpen(false)}>
+                <HoverCard> 
+                  <X className="h-5 w-5 m-1" />
                   <span className="sr-only">Close</span>
-                </Button> */}
+                  </HoverCard>
+                </Button>
+                
               </div>
               <nav className="px-6 py-4">
                 <ul className="space-y-4">
