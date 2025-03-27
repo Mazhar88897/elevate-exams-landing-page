@@ -149,6 +149,7 @@ export default function Navbar() {
 
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="lg:hidden">
+            <HoverCard> 
               <Button variant="outline" size="icon" className="lg:hidden border rounded-md p-2 h-10 w-10">
                 <span className="sr-only">Toggle menu</span>
                 <svg
@@ -168,6 +169,7 @@ export default function Navbar() {
                   <line x1="4" x2="20" y1="18" y2="18" />
                 </svg>
               </Button>
+              </HoverCard> 
             </SheetTrigger>
             <SheetContent side="left" className="w-[300px] p-0 [&>button]:hidden">
               <div className="flex h-20 items-center border-b px-6">
