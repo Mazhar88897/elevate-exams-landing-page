@@ -10,6 +10,7 @@ export default function page()   {
              Courses & <Highlight>Domains</Highlight> 
              
            </h2>
+           <p></p>
          </div>
         <Courses />
     </div>
