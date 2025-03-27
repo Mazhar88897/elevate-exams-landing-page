@@ -24,7 +24,7 @@ const navItems: NavItem[] = [
     hasDropdown: true,
     submenu: [
       { title: "Courses", href: "/main/courses" },
-      { title: "Course Details", href: "/main/courses/details" },
+      { title: "Course Details", href: "/main/courses/single-course" },
     ],
   },
   {
